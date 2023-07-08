@@ -92,7 +92,7 @@ export const linkSlice = createSlice({
       state.links.sort((a, b) => b.clickedTime - a.clickedTime);
     },
     findLink: (state, action: PayloadAction<findState>) => {
-      state.links = state.links
+      state.links = state.original
         .filter(
           (e) =>
             e.link.toLocaleLowerCase().includes(action.payload.input) ||
