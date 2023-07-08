@@ -44,7 +44,7 @@ const LinkForm: React.FC<LinkFormProps> = () => {
           console.log(token);
           const pathFinal = view == "update" ? "/updateLink" : "";
           const response = await fetch(
-            "http://localhost:8080/api/v1/linkmap" + pathFinal,
+            "https://shortlink-osak.onrender.com/api/v1/linkmap" + pathFinal,
             {
               method: view == "update" ? "PUT" : "POST",
               headers: {

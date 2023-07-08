@@ -54,7 +54,7 @@ const Link: React.FC<LinkProps> = () => {
         }
         const redirect = async () => {
           const response = await fetch(
-            "http://localhost:8080/api/v1/statistic/click",
+            "https://shortlink-osak.onrender.com/api/v1/statistic/click",
             {
               method: "POST",
               headers: {

@@ -25,12 +25,15 @@ const DashboardBody: React.FC<DashboardBodyProps> = () => {
       const getData = async () => {
         if (user.access_token !== "") {
           const token = user.access_token;
-          const response = await fetch("http://localhost:8080/api/v1/linkmap", {
-            method: "GET",
-            headers: {
-              Authorization: "Bearer " + token,
-            },
-          });
+          const response = await fetch(
+            "https://shortlink-osak.onrender.com/api/v1/linkmap",
+            {
+              method: "GET",
+              headers: {
+                Authorization: "Bearer " + token,
+              },
+            }
+          );
           if (response.status == 200) {
             const data: LinkState[] = await response.json();
             console.log(data);

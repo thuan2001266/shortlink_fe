@@ -22,7 +22,7 @@ const ConformAction: React.FC<ConformActionProps> = ({ action }) => {
               ? `/${selectedLink.id}`
               : `/duplicate/${selectedLink.id}`;
           const response = await fetch(
-            "http://localhost:8080/api/v1/linkmap" + pathFinal,
+            "https://shortlink-osak.onrender.com/api/v1/linkmap" + pathFinal,
             {
               method: action == "delete" ? "DELETE" : "POST",
               headers: {
