@@ -2,26 +2,45 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+/* body {
+  font: font-sans;
+} */
+
+@layer base {
+  body {
+    font-family: sans-serif;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@media (prefers-color-scheme: dark) {
+
+}
+
+@layer components {
+  .lightmodebasic {
+    color: rgb(var(--foreground-rgb));
+  background-image: linear-gradient(
+    325deg,
+    hsl(0deg 0% 100%) 0%,
+    hsl(210deg 94% 99%) 20%,
+    hsl(210deg 94% 99%) 31%,
+    hsl(210deg 94% 98%) 40%,
+    hsl(210deg 94% 97%) 48%,
+    hsl(209deg 94% 96%) 56%,
+    hsl(209deg 94% 96%) 64%,
+    hsl(209deg 94% 95%) 73%,
+    hsl(209deg 94% 94%) 84%,
+    hsl(209deg 94% 94%) 100%
+  );
+  color: rgb(27, 26, 26);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  }
+  .darkmodebasic {
+    background-image: none;
+    background-color: #27272a;
+    color: rgb(186, 195, 204);
+  }
 }
