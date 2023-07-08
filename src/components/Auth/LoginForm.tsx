@@ -117,7 +117,7 @@ const LoginForm: React.FC<LoginFormProps> = ({ toggle }) => {
       )}
       <div className="w-[90%] flex justify-end mt-4">
         <div className="flex text-sm">
-          <div>Don't have an account?</div>
+          <div>Don&apos;t have an account?</div>
           <div className="ml-2 font-semibold cursor-pointer" onClick={toggle}>
             Register
           </div>

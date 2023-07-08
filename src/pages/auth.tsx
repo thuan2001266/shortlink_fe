@@ -4,7 +4,7 @@ import React from "react";
 
 type authProps = {};
 
-const auth: React.FC<authProps> = () => {
+const Auth: React.FC<authProps> = () => {
   const [theme, toggleTheme] = useTheme();
   return (
     <div className="h-screen flex justify-center items-center">
@@ -12,4 +12,4 @@ const auth: React.FC<authProps> = () => {
     </div>
   );
 };
-export default auth;
+export default Auth;

@@ -7,7 +7,7 @@ import { useEffect } from "react";
 
 type dashboardProps = {};
 
-const dashboard: React.FC<dashboardProps> = () => {
+const Dashboard: React.FC<dashboardProps> = () => {
   const user = useAppSelector((state) => state.user);
   const router = useRouter();
   return (
@@ -23,4 +23,4 @@ const dashboard: React.FC<dashboardProps> = () => {
     </HeaderFooterLayout>
   );
 };
-export default dashboard;
+export default Dashboard;
