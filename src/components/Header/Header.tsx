@@ -1,14 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Leftside from "./Leftside";
 import Rightside from "./Rightside";
 import useAuth from "@/hooks/useAuth";
 import { useRouter } from "next/router";
+import { useAppSelector } from "@/store/hooks";
 
 type HeaderProps = {};
 
 const Header: React.FC<HeaderProps> = () => {
   const {} = useAuth();
   const router = useRouter();
+
   return (
     <div
       className={`w-full ${

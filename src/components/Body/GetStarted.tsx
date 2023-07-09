@@ -11,7 +11,7 @@ const GetStarted: React.FC<GetStartedProps> = () => {
       <div className="font-semibold text-base md:text-xl">
         Getting started right now
       </div>
-      <div className="font-bold text-lg md:text-2xl mt-3">
+      <div className="font-bold text-lg md:text-2xl mt-3 text-center">
         Link Less, Share More: Simplify Your URLs with Ease!
       </div>
       <div className="mt-6">
